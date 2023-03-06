@@ -8,7 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="socket" />
         <module name="socket-server-demo" />
+        <module name="cloud-dubbo-consumer" />
+        <module name="cloud-dubbo-provider" />
+        <module name="cloud-api" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-api" options="-parameters" />
+      <module name="cloud-dubbo-consumer" options="-parameters" />
+      <module name="cloud-dubbo-provider" options="-parameters" />
+      <module name="dubbo-learn" options="-parameters" />
+    </option>
   </component>
 </project>

@@ -1,0 +1,10 @@
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: nacos://192.168.26.25:8848
+    id: nacos-registry
+  protocol:
+    name: dubbo
+    port: 8088
+
